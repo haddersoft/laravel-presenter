@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Hadder\LaravelPresenter\Presenter;
+
+class DummyClass extends Presenter
+{
+
+}

@@ -1,0 +1,33 @@
+{
+    "name": "hadder/laravel-presenter",
+    "description": "Presenters baseado no laracasts/presenter",
+    "keywords": [
+        "presenter",
+        "view",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Friedrich",
+            "email": "fernando@hadder.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0|~6.0|~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hadder\\LaravelPresenter\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hadder\\LaravelPresenter\\ServiceProvider"
+            ]
+        }
+    }
+}
