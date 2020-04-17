@@ -56,3 +56,5 @@ Feitooooooooooo! Agora você pode fazer:
 ```php
     <h1>Olá, {{ $user->present()->nomeCompleto }}</h1>
 ```
+## Observações
+Por padrão alguns presenters de formatação de data já estãos etados como `created_at` e `updated_at` no formato `d/m/Y H:i:s`, ou seja todo model recuperado já tem `$model->present()->created_at`.
