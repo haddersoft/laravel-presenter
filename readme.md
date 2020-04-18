@@ -29,6 +29,11 @@ class UserPresenter extends Presenter {
         return $this->nome . ' ' . $this->sobrenome;
     }
 
+    public function data_nascimento()
+    {
+        return $this->data_nascimento->format('d/m/Y');
+    }
+  
 }
 ```
 Ou utilize o comando `php artisan presenter:make UserPresenter`
@@ -48,6 +53,7 @@ class User extends \Eloquent {
 
     protected $presenter = \App\Presenters\UserPresenter::class;
 
+    protected $date = ['data_nascimento'];
 }
 ```
 
