@@ -55,17 +55,17 @@ abstract class Presenter
 
     public function updated_at()
     {
-        return $this->entity->created_at->format('d/m/Y H:i:s');
+        return $this->entity->updated_at->format('d/m/Y H:i:s');
     }
 
     public function updated_at_date()
     {
-        return $this->entity->created_at->format('d/m/Y');
+        return $this->entity->updated_at->format('d/m/Y');
     }
 
     public function updated_at_hour()
     {
-        return $this->entity->created_at->format('H:i:s');
+        return $this->entity->updated_at->format('H:i:s');
     }
 
 }
