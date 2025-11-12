@@ -10,6 +10,8 @@ abstract class Presenter
      */
     protected $entity;
 
+    public $strpad_lenght = 3;
+
     /**
      * @param $entity
      */
@@ -35,7 +37,7 @@ abstract class Presenter
 
     public function id()
     {
-        return str_pad($this->entity->id, 3, 0, STR_PAD_LEFT);
+        return str_pad($this->entity->id, $this->strpad_lenght, 0, STR_PAD_LEFT);
     }
 
     public function created_at()

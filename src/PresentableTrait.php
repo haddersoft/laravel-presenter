@@ -14,6 +14,13 @@ trait PresentableTrait
      */
     protected $presenterInstance;
 
+    /**
+     * Classe presenter
+     *
+     * @var mixed
+     */
+    protected $presenter;
+
 //    protected $presenter;
 
     /**
