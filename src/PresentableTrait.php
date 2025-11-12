@@ -15,15 +15,6 @@ trait PresentableTrait
     protected $presenterInstance;
 
     /**
-     * Classe presenter
-     *
-     * @var mixed
-     */
-    public $presenter;
-
-//    protected $presenter;
-
-    /**
      * Prepare a new or cached presenter instance
      *
      * @return mixed
