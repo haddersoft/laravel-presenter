@@ -19,7 +19,7 @@ trait PresentableTrait
      *
      * @var mixed
      */
-    protected $presenter;
+    public $presenter;
 
 //    protected $presenter;
 
