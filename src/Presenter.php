@@ -45,6 +45,11 @@ abstract class Presenter
         return $this->entity->created_at->format('d/m/Y H:i:s');
     }
 
+    public function created_at_as()
+    {
+        return $this->entity->created_at->format('d/m/Y \à\s H:i:s');
+    }
+
     public function created_at_date()
     {
         return $this->entity->created_at->format('d/m/Y');
@@ -58,6 +63,10 @@ abstract class Presenter
     public function updated_at()
     {
         return $this->entity->updated_at->format('d/m/Y H:i:s');
+    }
+    public function updated_at_as()
+    {
+        return $this->entity->updated_at->format('d/m/Y \à\s H:i:s');
     }
 
     public function updated_at_date()
